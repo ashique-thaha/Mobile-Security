@@ -16,7 +16,7 @@
  <activity android:name="com.tmh.vulnwebview.SupportWebView"   android:exported="true"/>
   ```
 
- -  this is an activity declared on [[./3.Android Application components Part 2|3.Android Application components Part 2]] which is exported.
+ -  this is an activity declared on [[./3.Android Manifest.XML|3.Android Manifest.XML]] which is exported.
  - Let's take a look at a vulnerable web view
  ```java       
  webView.setWebViewClient(new WebViewClient());  
