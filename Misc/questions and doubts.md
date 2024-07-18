@@ -1,4 +1,4 @@
- - [ ] Are activities only UI screens? can it be not for example, a background action happening which doesn't need to be displayed?
- - [ ] are intents from apps to apps or within an app?
+ - [x] Are activities only UI screens? can it be not for example, a background action happening which doesn't need to be displayed?
+ - [x] are intents from apps to apps or within an app?
  - [ ] understand setAllowUniversalAccessFromFileURLs enabled for a WebView vulnerability.
  - [ ] why we need to send broadcast intent to a single app using  `Intent.setPackage` while we can do implicit or explicit intents for that purpose.
