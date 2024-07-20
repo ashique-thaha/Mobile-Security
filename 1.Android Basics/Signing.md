@@ -68,3 +68,4 @@ apksigner sign --ks-key-alias cert_name -ks ~/keystore_name.keystore out. apk
 
 
 ___
+
