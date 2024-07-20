@@ -1,6 +1,6 @@
 ___
 
-#### SQLi on Content Providers
+#### SQLi on Content Provider s
 
  - For accessing DATA applications request content provider with a query method to return cursor
  - The query method contains multiple parameters such as `Uri, projection, selection, selectionArgs, sortOrder` etc.
@@ -24,18 +24,29 @@ sortOrder,      null
 ```sql
  SELECT projection FROM Uri WHERE null=null ORDER BY  null
 ```
- 
--  the simplified statement will be:
+
+-  the simplified statement will be: 
 ```sql
 SELECT projection FROM uri
 ```
 
-
+ 
 -  here we are going to access users table instead of news to get passwords, let's see how to do that
 
 - remember we gave the projection variable the name payload now we are substituting a real sqli payload to the statement
-```
+```sql
 SELECT *FROM users;-- FROM uri
 ```
 
 -  the statement after -- will be ignored and the query will now return us the usernames and passwords from users table.
+
+- we can use command line to access content providers using this command:
+ ```
+content query --url content://com.example.appp/table_name
+```
+
+- We can put this to practical use:
+```
+content query --url content://com.example.appp/table_name --projection "sql_payload (eg: *From keys--)"
+```
+
