@@ -66,5 +66,3 @@ keytool -list -keystore keystore_name.keystore
 apksigner sign --ks-key-alias cert_name -ks ~/keystore_name.keystore out. apk
 ```
 
-
-___
