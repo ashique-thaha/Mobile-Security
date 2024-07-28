@@ -18,7 +18,7 @@ This will stop applications from interacting with each other, unless explicitly 
 
 
 ##### Profiles
- These are separated app data, like: Work profile, Personal profile, Always-on -vpn for      some apps.
+ These are separated app data, like: Work profile, Personal profile, Always-on -vpn for     some apps.
 
 ##### Primary User
  This is the first user created when the first time the phone is started, this can only be      
