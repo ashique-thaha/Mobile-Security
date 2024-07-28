@@ -30,7 +30,6 @@ adb  logcat | grep -i `3515`
 - 07-08 07:23:09.871  3515  3515 E diva-log: Error while processing transaction with credit card: 12345566
 ```
 
-
 - We can see the credit card details on the log.
 
 
@@ -38,6 +37,7 @@ adb  logcat | grep -i `3515`
 -  This vulnerability arises due to hard coded strings or keys leaking sensitive information.
 - For to analyse it reverse the app using `jadx-gui`
 - Find any thing useful like password usernames, api keys etc.
+
 
 ## Insecure Data strorage
 `scenario1:` 
@@ -48,6 +48,7 @@ adb shell
 cd /data/data/pakage-name/shared_prefs
 cat something.xml
 ```
+
 `scenario2:` 
 - here the data is stored in database but we can access it using sqlite3
 - by following these commands
@@ -72,7 +73,8 @@ cat tmp_file
 - usually developers hide it in `/mnt/sdcard`
 - here file will be something like - `.uinfo.txt` 
 
-## Input validation isuues
+
+## Input validation issues
 
 `Sql injection:`
 - Look for sql queries in source code if visible, then try usual trial and error method based on the query
