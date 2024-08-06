@@ -1,4 +1,13 @@
+
+###### iOS software Architecture
+![[../images/Screenshot 2024-07-30 at 5.17.09 PM.png|Screenshot 2024-07-30 at 5.17.09 PM.png]]
+###### More detailed view of iOS architecture
+
+![[../images/Screenshot 2024-07-30 at 5.23.36 PM.png|Screenshot 2024-07-30 at 5.23.36 PM.png]]
+
+
 #### Binary structure of iOS executable
+
 - This is in `Mach-O` format which is three regions: 
    - `Header`: Contains meta data about the application, such as the architecture it supports. 
 
