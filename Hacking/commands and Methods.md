@@ -138,3 +138,9 @@ jarsigner -verify-verbose something.apk
 ```shell
 jarsigner -verbose -sigalg MD5withRSA -digestalg  SHA1 - keystore [name of your keystore] [your .apk filel [your key alias]
 ```
+
+
+- To extract the data from the .ab file after the backup of the application has been done, use the following command:
+```python
+dd if=<backup-filename> bs=1 skip=24 | python -c “import zlib,sys;sys.stdout.write(zlib.decompress(sys.stdin.read()))” | tar -xvf –
+```
