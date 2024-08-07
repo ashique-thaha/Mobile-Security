@@ -83,13 +83,6 @@ https://something.firebaseio.com/{directory(optional)}/.json
 ```
 
 
-
- - check **android:allowBackup** is set to true or not, if its true it allows the data stored in the app to be backed up via adb eventhough the device is not rooted. : 
-```shell
-<application> android:allowBackup=”false” </application>
-```
-
-
  - look for `sendBroadcast` without class , package etc
 
  - check Intents coming from `getExtras()` 
@@ -140,7 +133,14 @@ jarsigner -verbose -sigalg MD5withRSA -digestalg  SHA1 - keystore [name of your 
 ```
 
 
+- To get backup via adb 
+```python
+adb backup –apk –shared com.android.insecurebankv2
+```
+
 - To extract the data from the .ab file after the backup of the application has been done, use the following command:
 ```python
-dd if=<backup-filename> bs=1 skip=24 | python -c “import zlib,sys;sys.stdout.write(zlib.decompress(sys.stdin.read()))” | tar -xvf –
+dd if=<backup-filename> bs=1 skip=24 | python -c “import zlib,sys;sys.stdout.write(zlib.decompress(sys.stdin.read() ))” | tar -xvf –
 ```
+
+
