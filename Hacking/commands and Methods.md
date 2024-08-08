@@ -140,7 +140,7 @@ adb backup –apk –shared com.android.insecurebankv2
 
 - To extract the data from the .ab file after the backup of the application has been done, use the following command:
 ```python
-dd if=<backup-filename> bs=1 skip=24 | python -c “import zlib,sys;sys.stdout.write(zlib.decompress(sys.stdin.read() ))” | tar -xvf –
+dd if=backup.ab bs=1 skip=24 | python -c “import zlib,sys;sys.stdout.write(zlib.decompress(sys.stdin.read()))” | tar -xvf –
 ```
 
 
