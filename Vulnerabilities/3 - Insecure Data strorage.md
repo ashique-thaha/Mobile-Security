@@ -1,9 +1,9 @@
 
 `scenario1:` 
--  ﻿/data/data/[package-name]/shared_prefs is a place where many developers store sensitive data, we can just access it using adb.
-- The adb command for this is:
+-  ﻿***/data/data/[package-name]/shared_prefs*** is a place where many developers store sensitive data, we can just access it using ***ADB*** 
+- The ***ADB*** command for this is:
 ```shell
-adb shell
+ADB  shell
 cd /data/data/pakage-name/shared_prefs
 cat something.xml
 ```
@@ -11,7 +11,7 @@ cat something.xml
 `scenario2:` 
 - here the data is stored in database but we can access it using sqlite3
 - by following these commands
-- adb shell `/data/data/packagename/databases` 
+- ADB  shell `/data/data/packagename/databases` 
 - use sqlite3 and access the database in which the sensitive data is stored.
 
 
@@ -21,7 +21,7 @@ cat something.xml
 - example: 
 
 ```shell 
-adb shell 
+ADB  shell 
 cd /data/data/packagename/
 cat tmp_file 
 ```

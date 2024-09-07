@@ -1,0 +1,3 @@
+- This is actually a bug caused due to typing errors
+- Usually android apps can provide custom permissions, which allow access to certain activities from authorised apps.
+- But if the name of the defined permission and the permission actually used differ, all apps are authorised.

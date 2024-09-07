@@ -1,0 +1,4 @@
+- When an intent comes into an app, it is used to trigger an activity to start. if not validated correctly, malicious app can trick victim app into kick starting malicious activity.
+- Intents coming from `getExtras()` will be a good start. Developers should validate incoming intents to the app and never directly send them to `startActivity()` .
+- Whenever possible, construct brand new Intents and add relevant parameters and permissions as needed, keeping the influence of the incoming intent  to a minimum. 
+- If you need to use them directly, make sure to check both the class and package names of the target activity, to make sure it's going somewhere safe.

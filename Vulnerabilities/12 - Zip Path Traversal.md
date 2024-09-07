@@ -1,0 +1,3 @@
+- For this we need to know how a zip file works: zip file contains a table which contains sort of a directory tree and a well formatted zip file will only contains paths like something/directory/filename.txt. when the file is unzipped, it takes a destination directory and then adds on each of the zip file entries to figure out where to write a final file 
+- But it is possible to construct some zip file with a path like ../../../../file.txt
+- `evilarc` is a tool that makes this kind of zip file possible.
